@@ -1,0 +1,12 @@
+Requirements for designing a Parking Lot
+
+The parking lot should have multiple entrances and exits.
+The global display board should show the number of free parking spots of all types.
+The parking lot should have different types of parking spots: mini, compact, and large.
+The admin should be able to add and remove entrances and exits.
+The parking attendant should be able to create parking tickets.
+The parking lot should support different parking strategies.
+The parking lot should support different modes of payment.
+The system should be able to generate tickets and update the count of the display board.
+The system should be able to manage payments.
+The system should be able to communicate with the display board and handle different parking strategies.
