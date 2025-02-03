@@ -1,0 +1,10 @@
+The requirements for the ticket transition application are as follows:
+
+1) State Transitions: The application should handle different states of a ticket, 
+   such as "To Do," "Analysis," "Progress," and "Done." It should allow users to transition tickets between these states.
+2) Notifications: The application should send different notifications based on the state changes of a ticket.
+   For example, it might send an email notification when a ticket is marked as "Done" or 
+   an SMS notification when a ticket is moved back to "Analysis."
+3) User Interactions: Users should be able to create new tickets and change the state of existing tickets.
+4) Ticket Metadata: Tickets should have metadata such as a description, title, and the user who created them.
+5) Flexibility: The application should be flexible enough to accommodate new ticket states and associated actions in the future.
