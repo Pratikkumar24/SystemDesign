@@ -1,6 +1,6 @@
 package SystemDesign.DesginPatternQuestions.tickettransition;
 
-enum TicketStatus {
+public enum TicketStatus {
     ANALYSIS,
     REVIEW,
     DONE

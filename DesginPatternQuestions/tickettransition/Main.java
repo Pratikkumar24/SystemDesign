@@ -1,5 +1,6 @@
 package SystemDesign.DesginPatternQuestions.tickettransition;
 
+import SystemDesign.DesginPatternQuestions.tickettransition.service.TicketService;;
 public class Main {
     public static void main(String[] args) {
         Users user1 = new Users("User1");
@@ -8,12 +9,15 @@ public class Main {
         Ticket ticket1 = ticketService.createTicket("user1 description", user1);
         Ticket ticket2 = ticketService.createTicket("user2 description", user2);
 
-        ticketService.changeTicketStatus(ticket1, TicketStatus.REVIEW);
-        ticketService.changeTicketStatus(ticket1, TicketStatus.DONE);
+        ticketService.startAnalysis(ticket1, user1);
+        ticketService.startReview(ticket1, user1);
+        ticketService.markDone(ticket1, user1);
 
-        ticketService.changeTicketStatus(ticket2, TicketStatus.REVIEW);
-        ticketService.changeTicketStatus(ticket2, TicketStatus.ANALYSIS);
-        ticketService.changeTicketStatus(ticket2, TicketStatus.DONE);
-        
+        ticketService.startAnalysis(ticket2, user2);
+        ticketService.startReview(ticket2, user2);
+        ticketService.markDone(ticket2, user2);
+
+        ticketService.startAnalysis(ticket1, user1);
+
     }
 }

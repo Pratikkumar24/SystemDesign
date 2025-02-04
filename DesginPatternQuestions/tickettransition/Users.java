@@ -5,4 +5,7 @@ public class Users {
     public Users(String name) {
         this.name = name;
     }  
+    public String getName() {
+        return name;
+    }
 }

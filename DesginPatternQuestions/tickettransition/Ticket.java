@@ -1,26 +1,29 @@
 package SystemDesign.DesginPatternQuestions.tickettransition;
 
+import SystemDesign.DesginPatternQuestions.tickettransition.ticketstate.State;
+import SystemDesign.DesginPatternQuestions.tickettransition.ticketstate.Analysis;
+
 public class Ticket {
     private String description;
-    private TicketStatus status;
+    private State state;
     private Users createdBy;
 
     public Ticket(String description, Users createdBy) {
         this.description = description;
-        this.status = TicketStatus.ANALYSIS;
+        this.state = new Analysis();
         this.createdBy = createdBy;
     }
 
-    public void setStatus(TicketStatus status) {
-        this.status = status;
+    public void setState(State state) {
+        this.state = state;
     }
-    
+
     public String getDescription() {
         return description;
     }
 
-    public TicketStatus getStatus() {
-        return status;
+    public State getTicketState() {
+        return this.state;
     }
 
     public Users getCreatedBy() {
