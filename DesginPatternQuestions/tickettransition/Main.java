@@ -18,6 +18,5 @@ public class Main {
         ticketService.markDone(ticket2, user2);
 
         ticketService.startAnalysis(ticket1, user1);
-
     }
 }
