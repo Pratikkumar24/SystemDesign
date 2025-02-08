@@ -20,11 +20,10 @@ public class User implements Subscriber{
     @Override
     public void notifySubscriber(MeetingRoom meetingRoom) {
         meetingRooms.add(meetingRoom);
-        System.out.println("Notified user: " + email + " for meeting room: " + meetingRoom.getMeetingRoomName());
+        System.out.println("Notified user: " + email + " for meeting room: " + meetingRoom.getMeetingId());
     }
     
     public List<MeetingRoom> getMeetingRooms() {
         return meetingRooms;
     }
-    //todo - Need to update the meetingRooms
 }

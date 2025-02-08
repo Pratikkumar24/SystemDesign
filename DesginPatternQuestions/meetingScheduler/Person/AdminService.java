@@ -1,5 +1,7 @@
 package SystemDesign.DesginPatternQuestions.meetingScheduler.Person;
 
+import java.util.List;
+
 import SystemDesign.DesginPatternQuestions.meetingScheduler.Database.Repository;
 import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
 
@@ -21,14 +23,19 @@ public class AdminService {
         return adminService;
     }
     
-    public void createUser(String email, int userId) {
+    public void createUser(String email) {
+        if(repository.getUserByEmail(email) != null) {
+            System.out.println("User already exists");
+            return;
+        }
+        int userId = repository.getNewUserId();
         User client = new Client(email, userId);
         repository.updatedEmailToUsers(email, client);
     }
 
-    public void createMeetingRoom(String roomName, int capacity) {
+    public void createMeetingRoom(int capacity) {
         int id = repository.generateId();
-        MeetingRoom meetingRoom = new MeetingRoom(id, capacity, 0,0);
+        MeetingRoom meetingRoom = new MeetingRoom(id, capacity);
         repository.updateMeetingRoom(meetingRoom);
     }
 
@@ -39,5 +46,18 @@ public class AdminService {
         } else {
             System.out.println("Meeting room deleted successfully");
         }
+    }
+
+    public List<MeetingRoom> getUsersSchedule(String email) {
+        User user = repository.getUserByEmail(email);
+        if(user == null) {
+            System.out.println("User not found");
+            return null;
+        }
+        return user.getMeetingRooms();
+    }
+
+    public User getUser(String email) {
+        return repository.getUserByEmail(email);
     }
 }

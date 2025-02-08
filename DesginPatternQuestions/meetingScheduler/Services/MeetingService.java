@@ -1,6 +1,7 @@
 package SystemDesign.DesginPatternQuestions.meetingScheduler.Services;
 
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
 import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.Subscriber;
 
@@ -32,14 +33,15 @@ public class MeetingService {
 
     public MeetingRoom getMeetingRoom(int date, int startTime, int endTime, List<String> emails) {
         //step 1: search for the meeting room based on the strategy
+        System.out.println("Searching for the meeting room");
         MeetingRoom meetingRoom = searchStrategy.findMeetingRoom(date, startTime, endTime);
+        if(meetingRoom == null) {
+            return null;
+        }
 
         //step 2: book the meeting room
         boolean isBooked = meetingRoom.bookMeeting();
-        if(isBooked) {
-            meetingRoom.setMeetingRoom("Meeting Room 1");
-        } else {
-            System.out.println("No Meeting room found");
+        if(!isBooked) {
             return null;
         }
 
@@ -51,6 +53,43 @@ public class MeetingService {
 
     public void setSearchStrategy(SearchStrategy searchStrategy) {
         this.searchStrategy = searchStrategy;
+    }
+    public List<MeetingRoom> getOccupiedMeetingRoom(int date, int startTime, int endTime) {
+        HashSet<Integer> bookedMeetingRoomIds = new HashSet<>();
+        
+        for(int time = startTime; time<=endTime; time++) {
+            ArrayList<MeetingRoom> meetingRooms = repository.getMeetingRooms().get(new int[]{date, time});
+            if(meetingRooms != null) {
+                for(MeetingRoom meetingRoom: meetingRooms) {
+                    bookedMeetingRoomIds.add(meetingRoom.getMeetingId());
+                }
+            }
+        }
+        List<MeetingRoom> occupiedList = new ArrayList<>();
+        for(Integer ids: bookedMeetingRoomIds) {
+            MeetingRoom  room = repository.getMeetingRoomWithId(ids);
+            if(room!=null)
+                occupiedList.add(room);
+            else {
+                System.out.println("Could'nt find room for id:"+ids);
+            }
+        }
+        return occupiedList;
+    }
+    public List<MeetingRoom> getAvailableMeetingRooms(int date, int startTime, int endTime) {
+        HashSet<Integer> bookedMeetingRoomIds = new HashSet<>();
+        
+        for(int time = startTime; time<=endTime; time++) {
+            ArrayList<MeetingRoom> meetingRooms = repository.getMeetingRooms().get(new int[]{date, time});
+            if(meetingRooms != null) {
+                for(MeetingRoom meetingRoom: meetingRooms) {
+                    bookedMeetingRoomIds.add(meetingRoom.getMeetingId());
+                }
+            }
+        }
+        System.out.println("Number of meeting rooms booked between "+startTime+" to "+endTime+" -> "+bookedMeetingRoomIds.size());
+        List<MeetingRoom> availableMeetingRooms = repository.getAvailableMeetingRooms(bookedMeetingRoomIds);
+        return availableMeetingRooms;
     }
 
     public void notifyAll(List<String> emails, MeetingRoom meetingRoom) {
