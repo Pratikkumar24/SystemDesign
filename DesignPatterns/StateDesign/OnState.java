@@ -1,8 +1,8 @@
-package SystemDesign.DesignPatterns.StateDesign;
+package StateDesign;
 
 public class OnState implements StateInterface{
     @Override
-    void pressButtom(Fan fan) {
+    public void pressButtom(Fan fan) {
         System.out.println("Switching to Off state");
         fan.setState(new OffState());
     }

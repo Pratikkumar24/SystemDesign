@@ -1,4 +1,4 @@
-package SystemDesign.DesignPatterns.StateDesign;
+package StateDesign;
 
 public interface StateInterface {
     void pressButtom(Fan fan);

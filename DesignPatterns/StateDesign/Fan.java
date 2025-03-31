@@ -1,4 +1,4 @@
-package SystemDesign.DesignPatterns.StateDesign;
+package StateDesign;
 
 public class Fan {
     StateInterface state;
