@@ -1,10 +1,10 @@
 package SystemDesign.DesginPatternQuestions.VendingMachine;
 
 public interface VendingStates {
-    void pressInsertButton(Machine machine);
-    void insertCoin(Coin coin);
-    void selectProduct(Machine machine);
-    void refundFullMoney(Machine machine);
-    void chooseProduct(int code);
-    Item dispenceProduct();
+    void pressInsertButton(MachineManager manager, Machine machine);
+    void insertCoin(MachineManager manager, Machine machine, Coin coin);
+    void selectProduct(MachineManager manager, Machine machine);
+    int refundFullMoney(MachineManager manager, Machine machine);
+    boolean chooseProduct(MachineManager manager, Machine machine, int code);
+    Item dispenceProduct(MachineManager manager, Machine machine);
 }

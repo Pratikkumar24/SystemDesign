@@ -1,20 +1,64 @@
 package SystemDesign.DesginPatternQuestions.VendingMachine;
 
-import java.util.ArrayList;
-import java.util.List;
-
 public class Machine {
-    VendingStates states;
-    ItemSelf[] itemSelfs;
-    List<Coin> coins;
+    private static Machine machine = null;
+    private ItemSelf[] itemSelfs;
+    private int bankBalance;
+    private int currSelectProductCode = -1;
+    int itemSize = 10;
 
-    public Machine(int itemSize) {
+    private Machine() {
+    }
+
+    public void init() {
         this.itemSelfs = new ItemSelf[itemSize];
-        coins = new ArrayList<>();
+        bankBalance = 0;
     }
 
-    void setState(VendingStates state) {
-        this.states = state;
+    public static Machine getInstance() {
+        
+        if(machine == null) {
+            machine = new Machine();
+        }
+        return machine;
     }
 
+    public void addCoins(Coin coin) {
+        bankBalance+=coin.getValue();
+    }
+
+    public int totalMoney() {
+        return bankBalance;
+    }
+
+    public boolean isProductCodeAvailable(int code) {
+        for(ItemSelf itemSelf:  itemSelfs) {
+            if(code == itemSelf.getCode() && !itemSelf.isItemSold() && itemSelf.getItem().getItemValue()<=totalMoney()) {
+                return true;
+            }
+        }
+        return false;
+    }
+
+    public Item getProduct() {
+        for(ItemSelf itemSelf:  itemSelfs) {
+            if(currSelectProductCode == itemSelf.getCode()) {
+                removeCoins(itemSelf.getItem().getItemValue());
+                return itemSelf.getItem();
+            }
+        }
+        return null;
+    }
+
+    public void removeCoins(int price) {
+        bankBalance-=price;
+    }
+
+    public int getSelectedProductedCode(int code) {
+        return currSelectProductCode;
+    }
+
+    public void setSelectedProductedCode(int code) {
+        this.currSelectProductCode = code;
+    }
 }
