@@ -1,8 +1,8 @@
 package SystemDesign.DesginPatternQuestions.VendingMachine;
 
 public class Item {
-    int price;
-    String name;
+    private int price;
+    private String name;
     public Item(String name, int price) {
         this.price = price;
         this.name = name;

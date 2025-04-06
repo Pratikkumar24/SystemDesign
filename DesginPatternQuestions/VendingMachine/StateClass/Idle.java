@@ -27,9 +27,8 @@ public class Idle implements VendingStates {
     }
 
     @Override
-    public int refundFullMoney(MachineManager manager, Machine machine) {
+    public void refundFullMoney(MachineManager manager, Machine machine) {
         System.out.println("[-] Still in idle state, No money due");
-        return 0;
     }
 
     @Override

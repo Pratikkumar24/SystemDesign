@@ -26,8 +26,9 @@ public class ProductSelection implements VendingStates{
     }
 
     @Override
-    public int refundFullMoney(MachineManager manager, Machine machine) {
-        return machine.totalMoney();
+    public void refundFullMoney(MachineManager manager, Machine machine) {
+        int money = machine.totalMoney();
+        System.out.println("[+] Your leftOver money credited to your account:"+money);
     }
 
     @Override
@@ -37,13 +38,13 @@ public class ProductSelection implements VendingStates{
             return false;
         }
         machine.setSelectedProductedCode(code);
+        manager.setState(new DispenseProduct());
+        System.out.println("[+] Moving to Dispense Product");
         return true;
     }
 
     @Override
     public Item dispenceProduct(MachineManager manager, Machine machine) {
-        manager.setState(new DispenseProduct());
-        System.out.println("[+] Moving to Dispense Product");
         return null;
     }
 }

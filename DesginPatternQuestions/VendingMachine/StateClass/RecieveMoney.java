@@ -16,6 +16,8 @@ public class RecieveMoney implements VendingStates{
     @Override
     public void insertCoin(MachineManager manager,Machine machine, Coin coin) {
         machine.addCoins(coin); 
+        System.out.println("[+] adding "+coin.getValue());
+        System.out.println("Total bank balance: "+machine.totalMoney());
         return;
     }
 
@@ -27,20 +29,20 @@ public class RecieveMoney implements VendingStates{
     }
 
     @Override
-    public int refundFullMoney(MachineManager manager, Machine machine) {
-        System.out.println("[-] Still in idle state, No money due");
-        return 0;
+    public void refundFullMoney(MachineManager manager, Machine machine) {
+        int money = machine.totalMoney();
+        System.out.println("[+] Your account is credited with "+money+" rs");
     }
 
     @Override
     public boolean chooseProduct(MachineManager manager, Machine machine, int code) {
-        System.out.println("[-] Still in idle state, no product to choose");
+        System.out.println("[-] In Recive money state, no product to choose");
         return false;
     }
 
     @Override
     public Item dispenceProduct(MachineManager manager, Machine machine) {
-        System.out.println("[-] Still in idle state, no product due");
+        System.out.println("[-] In Recive money state, no product due");
         return null;
     }
 }

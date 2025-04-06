@@ -5,9 +5,11 @@ public class ItemSelf {
     private int code;
     private boolean isSold;
 
+
     public ItemSelf(Item item, int code) {
         this.item = item;
         this.code = code;
+        isSold = false;
     }
 
     public int getCode() {
@@ -17,6 +19,7 @@ public class ItemSelf {
     public Item getItem() {
         return this.item;
     }
+    
     public boolean isItemSold() {
         return this.isSold;
     }

@@ -3,11 +3,21 @@ package SystemDesign.DesginPatternQuestions.VendingMachine;
 import SystemDesign.DesginPatternQuestions.VendingMachine.StateClass.Idle;
 
 public class MachineManager {
-    Machine machine = Machine.getInstance();
-    VendingStates state;
+    private Machine machine = Machine.getInstance();
+    private VendingStates state;
     public MachineManager() {
         state = new Idle();
+        machine.init();
     }
+
+    public void addProduct(String name, int price) {
+        machine.addProduct(name, price);
+    }
+
+    public void showProduct() {
+        machine.showProducts();
+    }
+    
     public void setState(VendingStates newState) {
         state = newState;
     }
@@ -24,8 +34,8 @@ public class MachineManager {
         state.selectProduct(this, machine);
     }
 
-    public void chooseProduct(int code) {
-        state.chooseProduct(this, machine, code);
+    public boolean chooseProduct(int code) {
+        return state.chooseProduct(this, machine, code);
     }
 
     public void dispenceProduct() {

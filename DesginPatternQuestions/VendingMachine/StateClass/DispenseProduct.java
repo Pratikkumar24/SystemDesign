@@ -19,15 +19,15 @@ public class DispenseProduct implements VendingStates {
 
     @Override
     public void selectProduct(MachineManager manager, Machine machine) {
-        //todo - Implement replacement of product
+        System.out.println("[-] In DispenceProduct state, cant select any product");
     }
 
     @Override
-    public int refundFullMoney(MachineManager manager, Machine machine) {
+    public void refundFullMoney(MachineManager manager, Machine machine) {
         int money = machine.totalMoney();
         machine.removeCoins(money);
         manager.setState(new Idle());
-        return money;
+        System.out.println("[+] LeftOver money is credit to your account: "+money);
     }
 
     @Override
@@ -37,8 +37,9 @@ public class DispenseProduct implements VendingStates {
 
     @Override
     public Item dispenceProduct(MachineManager manager, Machine machine) {
+        System.out.println("[+] Despensing product....");
         Item item = machine.getProduct();
-        //Return the refund (or just print the refund)
+        refundFullMoney(manager, machine);
         manager.setState(new Idle());
         return item;
     }
