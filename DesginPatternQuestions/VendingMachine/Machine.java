@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine;
+package VendingMachine;
 
 import java.util.ArrayList;
 import java.util.List;

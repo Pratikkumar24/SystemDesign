@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem.LogOutputStrategy;
+package LoggerSystem.LogOutputStrategy;
 
 public class Display {
     PrintInterface logStrategy;

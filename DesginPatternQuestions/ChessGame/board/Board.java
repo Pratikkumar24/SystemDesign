@@ -1,15 +1,15 @@
-package board;
+package ChessGame.board;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-import controller.Controller;
-import controller.PieceCoordinates;
-import pieces.Pieces;
-import pieces.PiecesFactory;
-import player.Player;
-import type.ChessPiece;
-import type.PieceType;
+import ChessGame.controller.Controller;
+import ChessGame.controller.PieceCoordinates;
+import ChessGame.pieces.Pieces;
+import ChessGame.pieces.PiecesFactory;
+import ChessGame.player.Player;
+import ChessGame.type.ChessPiece;
+import ChessGame.type.PieceType;
 
 public class Board {
     Pieces[][] pieces;

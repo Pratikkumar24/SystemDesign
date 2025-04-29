@@ -1,11 +1,11 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Strategy;
+package meetingScheduler.Strategy;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Entity.MeetingRoom;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Database.Repository;
+import meetingScheduler.Database.Repository;
 
 public class AvailableRoomStrategy implements SearchStrategy {
 

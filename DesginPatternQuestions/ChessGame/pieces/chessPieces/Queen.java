@@ -1,7 +1,7 @@
-package pieces.chessPieces;
+package ChessGame.pieces.chessPieces;
 
-import board.Board;
-import pieces.MovementStrategy;
+import ChessGame.board.Board;
+import ChessGame.pieces.MovementStrategy;
 
 public class Queen implements MovementStrategy{
 

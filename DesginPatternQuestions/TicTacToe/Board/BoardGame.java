@@ -1,8 +1,8 @@
-package SystemDesign.DesginPatternQuestions.TicTacToe.Board;
+package TicTacToe.Board;
 
-import SystemDesign.DesginPatternQuestions.TicTacToe.Enum.GameState;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Pieces.Piece;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Players.Player;
+import TicTacToe.Enum.GameState;
+import TicTacToe.Pieces.Piece;
+import TicTacToe.Players.Player;
 
 public class BoardGame {
     int size;

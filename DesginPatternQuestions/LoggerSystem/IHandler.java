@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem;
+package LoggerSystem;
 
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LogOutputStrategy.PrintInterface;
+import LoggerSystem.LogOutputStrategy.PrintInterface;
 
 interface IHandler {
     void setHandler(LogHandler handler);

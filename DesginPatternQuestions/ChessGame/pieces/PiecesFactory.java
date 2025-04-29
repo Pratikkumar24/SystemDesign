@@ -1,11 +1,11 @@
-package pieces;
+package ChessGame.pieces;
 
-import pieces.chessPieces.Bishop;
-import pieces.chessPieces.Rook;
-import pieces.chessPieces.King;
-import pieces.chessPieces.Knight;
-import pieces.chessPieces.Pawn;
-import pieces.chessPieces.Queen;
+import ChessGame.pieces.chessPieces.Bishop;
+import ChessGame.pieces.chessPieces.Rook;
+import ChessGame.pieces.chessPieces.King;
+import ChessGame.pieces.chessPieces.Knight;
+import ChessGame.pieces.chessPieces.Pawn;
+import ChessGame.pieces.chessPieces.Queen;
 
 public class PiecesFactory {
     public MovementStrategy getPiecesFactory(String piece) {

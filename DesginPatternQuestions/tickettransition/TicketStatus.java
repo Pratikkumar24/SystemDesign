@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.tickettransition;
+package tickettransition;
 
 public enum TicketStatus {
     ANALYSIS,

@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Entity;
+package meetingScheduler.Entity;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.User;
+import meetingScheduler.Person.User;
 
 public class MeetingRoom {
     int meetingId;

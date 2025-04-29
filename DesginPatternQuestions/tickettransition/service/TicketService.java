@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.tickettransition.service;
+package tickettransition.service;
 
-import SystemDesign.DesginPatternQuestions.tickettransition.Ticket;
-import SystemDesign.DesginPatternQuestions.tickettransition.Users;
+import tickettransition.Ticket;
+import tickettransition.Users;
 
 public class TicketService {
     public Ticket createTicket(String description, Users createdBy) {

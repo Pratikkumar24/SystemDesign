@@ -1,7 +1,9 @@
-import board.Board;
-import player.Player;
-import player.PlayerFactory;
-import type.PieceType;
+package ChessGame;
+
+import ChessGame.board.Board;
+import ChessGame.player.Player;
+import ChessGame.player.PlayerFactory;
+import ChessGame.type.PieceType;
 
 public class Main {
     public static void main(String[] args) {

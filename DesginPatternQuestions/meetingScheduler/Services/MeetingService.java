@@ -1,14 +1,14 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Services;
+package meetingScheduler.Services;
 
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.Subscriber;
+import meetingScheduler.Person.Subscriber;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Database.Repository;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Services.NotificationService.NotifyService;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Strategy.SearchStrategy;
+import meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Database.Repository;
+import meetingScheduler.Services.NotificationService.NotifyService;
+import meetingScheduler.Strategy.SearchStrategy;
 
 public class MeetingService {
     public static MeetingService meetingService;

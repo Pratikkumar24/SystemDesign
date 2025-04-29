@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem.Loggers;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LogHandler;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LEVEL;
+package LoggerSystem.Loggers;
+import LoggerSystem.LogHandler;
+import LoggerSystem.LEVEL;
 
 public class Warn extends LogHandler {
     public Warn(LogHandler handler) {

@@ -1,10 +1,10 @@
-package controller;
+package ChessGame.controller;
 
 import java.util.Scanner;
 
-import board.Board;
-import player.Player;
-import type.PieceType;
+import ChessGame.board.Board;
+import ChessGame.player.Player;
+import ChessGame.type.PieceType;
 
 public class Controller {
 

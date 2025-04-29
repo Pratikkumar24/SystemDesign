@@ -1,4 +1,4 @@
-package controller;
+package ChessGame.controller;
 
 public class PieceCoordinates {
     private int row;

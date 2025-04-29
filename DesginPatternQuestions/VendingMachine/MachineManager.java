@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine;
+package VendingMachine;
 
-import SystemDesign.DesginPatternQuestions.VendingMachine.StateClass.Idle;
+import VendingMachine.StateClass.Idle;
 
 public class MachineManager {
     private Machine machine = Machine.getInstance();

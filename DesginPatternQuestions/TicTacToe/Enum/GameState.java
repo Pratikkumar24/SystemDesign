@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.TicTacToe.Enum;
+package TicTacToe.Enum;
 
 public enum GameState {
     WIN,

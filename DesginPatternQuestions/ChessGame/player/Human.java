@@ -1,6 +1,6 @@
-package player;
+package ChessGame.player;
 
-import board.Board;
+import ChessGame.board.Board;
 
 public class Human implements PlayerStrategy{
 

@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.tickettransition;
+package tickettransition;
 
-import SystemDesign.DesginPatternQuestions.tickettransition.ticketstate.State;
-import SystemDesign.DesginPatternQuestions.tickettransition.ticketstate.Analysis;
+import tickettransition.ticketstate.State;
+import tickettransition.ticketstate.Analysis;
 
 public class Ticket {
     private String description;

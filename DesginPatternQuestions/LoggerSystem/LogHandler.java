@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem;
+package LoggerSystem;
 
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LogOutputStrategy.*;
+import LoggerSystem.LogOutputStrategy.*;
 
 public abstract class LogHandler implements IHandler{
     protected LogHandler handler;

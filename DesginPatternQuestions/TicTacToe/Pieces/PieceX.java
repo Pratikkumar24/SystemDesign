@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.TicTacToe.Pieces;
+package TicTacToe.Pieces;
 
-import SystemDesign.DesginPatternQuestions.TicTacToe.Enum.PieceType;
+import TicTacToe.Enum.PieceType;
 
 public class PieceX extends Piece {
     public PieceX() {

@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine;
+package VendingMachine;
 
 public interface VendingStates {
     void pressInsertButton(MachineManager manager, Machine machine);

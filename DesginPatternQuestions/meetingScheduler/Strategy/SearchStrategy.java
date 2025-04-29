@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Strategy;
+package meetingScheduler.Strategy;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Entity.MeetingRoom;
 
 public interface SearchStrategy {
     MeetingRoom findMeetingRoom(int date, int startTime, int endTime);

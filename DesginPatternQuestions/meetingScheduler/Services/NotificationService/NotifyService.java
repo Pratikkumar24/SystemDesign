@@ -1,11 +1,11 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Services.NotificationService;
+package meetingScheduler.Services.NotificationService;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Entity.MeetingRoom;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.Subscriber;
+import meetingScheduler.Person.Subscriber;
 
 public class NotifyService implements Server {
     MeetingRoom meetingRoom;

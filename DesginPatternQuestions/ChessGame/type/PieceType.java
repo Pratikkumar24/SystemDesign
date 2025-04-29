@@ -1,4 +1,4 @@
-package type;
+package ChessGame.type;
 
 public enum PieceType {
     WHITE_PIECE,

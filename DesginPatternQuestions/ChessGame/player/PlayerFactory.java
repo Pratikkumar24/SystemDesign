@@ -1,4 +1,4 @@
-package player;
+package ChessGame.player;
 
 public class PlayerFactory {
     public PlayerStrategy getPlayerStrategy(String strategy) {

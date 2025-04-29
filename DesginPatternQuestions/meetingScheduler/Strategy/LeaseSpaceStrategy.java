@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Strategy;
+package meetingScheduler.Strategy;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Database.Repository;
+import meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Database.Repository;
 
 public class LeaseSpaceStrategy implements SearchStrategy {
     

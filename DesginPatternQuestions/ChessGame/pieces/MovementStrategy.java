@@ -1,6 +1,6 @@
-package pieces;
+package ChessGame.pieces;
 
-import board.Board;
+import ChessGame.board.Board;
 
 public interface MovementStrategy {
     Boolean canMove(Board board, int row, int col);

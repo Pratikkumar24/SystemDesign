@@ -1,8 +1,7 @@
-package SystemDesign.DesginPatternQuestions.TicTacToe;
+package TicTacToe;
 
 import java.util.Scanner;
-
-import SystemDesign.DesginPatternQuestions.TicTacToe.GameService.Game;
+import TicTacToe.GameService.Game;
 
 public class Main {
     public static void main(String[] args) {

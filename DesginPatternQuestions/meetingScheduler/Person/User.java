@@ -1,9 +1,9 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Person;
+package meetingScheduler.Person;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Entity.MeetingRoom;
 
 public class User implements Subscriber{
 

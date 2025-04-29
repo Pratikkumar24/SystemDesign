@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.Loggers.*;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LogOutputStrategy.*;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.Loggers.Error;
+package LoggerSystem;
+import LoggerSystem.Loggers.*;
+import LoggerSystem.LogOutputStrategy.*;
+import LoggerSystem.Loggers.Error;
 public class Main {
     public static void main(String[] args) {
         LogHandler trace = new Trace(null);

@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine;
+package VendingMachine;
 
 public enum Coin {
     ONE(1),

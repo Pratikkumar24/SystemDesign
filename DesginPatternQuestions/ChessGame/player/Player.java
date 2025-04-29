@@ -1,7 +1,7 @@
-package player;
+package ChessGame.player;
 
-import board.Board;
-import type.PieceType;
+import ChessGame.board.Board;
+import ChessGame.type.PieceType;
 
 public class Player {
     private final String name;

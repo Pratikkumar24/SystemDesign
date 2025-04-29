@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine;
+package VendingMachine;
 
 public class Item {
     private int price;

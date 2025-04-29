@@ -1,6 +1,6 @@
-package player;
+package ChessGame.player;
 
-import board.Board;
+import ChessGame.board.Board;
 
 public interface PlayerStrategy {
     public void selectMove(Board board);

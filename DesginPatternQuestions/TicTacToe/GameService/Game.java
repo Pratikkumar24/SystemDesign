@@ -1,15 +1,15 @@
-package SystemDesign.DesginPatternQuestions.TicTacToe.GameService;
+package TicTacToe.GameService;
 
 import java.util.Deque;
 import java.util.HashSet;
 import java.util.LinkedList;
 import java.util.Scanner;
 
-import SystemDesign.DesginPatternQuestions.TicTacToe.Board.BoardGame;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Enum.GameState;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Enum.PieceType;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Pieces.Piece;
-import SystemDesign.DesginPatternQuestions.TicTacToe.Players.Player;
+import TicTacToe.Board.BoardGame;
+import TicTacToe.Enum.GameState;
+import TicTacToe.Enum.PieceType;
+import TicTacToe.Pieces.Piece;
+import TicTacToe.Players.Player;
 
 public class Game {
     Deque<Player> players;

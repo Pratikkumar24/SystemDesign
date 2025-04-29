@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem.Loggers;
+package LoggerSystem.Loggers;
 
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LEVEL;
-import SystemDesign.DesginPatternQuestions.LoggerSystem.LogHandler;
+import LoggerSystem.LEVEL;
+import LoggerSystem.LogHandler;
 
 public class Info extends LogHandler {
     public Info(LogHandler handler) {

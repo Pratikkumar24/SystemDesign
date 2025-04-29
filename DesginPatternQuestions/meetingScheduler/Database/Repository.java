@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler.Database;
+package meetingScheduler.Database;
 
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -6,8 +6,8 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Random;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.User;
+import meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Person.User;
 
 public class Repository {
     HashMap<int[], ArrayList<MeetingRoom>> meetingRooms;

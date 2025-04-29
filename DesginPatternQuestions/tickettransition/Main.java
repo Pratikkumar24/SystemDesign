@@ -1,6 +1,6 @@
-package SystemDesign.DesginPatternQuestions.tickettransition;
+package tickettransition;
 
-import SystemDesign.DesginPatternQuestions.tickettransition.service.TicketService;;
+import tickettransition.service.TicketService;;
 public class Main {
     public static void main(String[] args) {
         Users user1 = new Users("User1");

@@ -1,8 +1,8 @@
-package pieces;
+package ChessGame.pieces;
 
-import board.Board;
-import type.ChessPiece;
-import type.PieceType;
+import ChessGame.board.Board;
+import ChessGame.type.ChessPiece;
+import ChessGame.type.PieceType;
 
 public class Pieces {
     PieceType pieceType;

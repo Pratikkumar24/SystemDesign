@@ -1,7 +1,7 @@
-package SystemDesign.DesginPatternQuestions.tickettransition.ticketstate;
+package tickettransition.ticketstate;
 
-import SystemDesign.DesginPatternQuestions.tickettransition.Ticket;
-import SystemDesign.DesginPatternQuestions.tickettransition.Users;
+import tickettransition.Ticket;
+import tickettransition.Users;
 
 public interface State {
     boolean startAnalysis(Ticket ticket, Users user);

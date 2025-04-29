@@ -1,15 +1,15 @@
-package SystemDesign.DesginPatternQuestions.meetingScheduler;
+package meetingScheduler;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Database.Repository;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Entity.MeetingRoom;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.AdminService;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Person.User;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Services.MeetingService;
-import SystemDesign.DesginPatternQuestions.meetingScheduler.Strategy.AvailableRoomStrategy;
+import meetingScheduler.Database.Repository;
+import meetingScheduler.Entity.MeetingRoom;
+import meetingScheduler.Person.AdminService;
+import meetingScheduler.Person.User;
+import meetingScheduler.Services.MeetingService;
+import meetingScheduler.Strategy.AvailableRoomStrategy;
 
 public class Main {
     public static void addAllUsers(AdminService admin) {

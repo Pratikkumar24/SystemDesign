@@ -1,4 +1,4 @@
-package SystemDesign.DesginPatternQuestions.LoggerSystem;
+package LoggerSystem;
 
 public enum LEVEL {
     TRACE,

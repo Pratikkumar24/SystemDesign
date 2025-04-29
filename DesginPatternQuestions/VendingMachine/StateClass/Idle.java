@@ -1,10 +1,10 @@
-package SystemDesign.DesginPatternQuestions.VendingMachine.StateClass;
+package VendingMachine.StateClass;
 
-import SystemDesign.DesginPatternQuestions.VendingMachine.Coin;
-import SystemDesign.DesginPatternQuestions.VendingMachine.Item;
-import SystemDesign.DesginPatternQuestions.VendingMachine.Machine;
-import SystemDesign.DesginPatternQuestions.VendingMachine.MachineManager;
-import SystemDesign.DesginPatternQuestions.VendingMachine.VendingStates;
+import VendingMachine.Coin;
+import VendingMachine.Item;
+import VendingMachine.Machine;
+import VendingMachine.MachineManager;
+import VendingMachine.VendingStates;
 
 public class Idle implements VendingStates {
     @Override
