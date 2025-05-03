@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "MangeParkingLot.Main",
+            "projectName": "SystemDesign_24706405"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "SnakeGame.Main",
             "projectName": "SystemDesign_24706405"
         },
