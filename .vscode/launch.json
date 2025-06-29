@@ -8,6 +8,13 @@
             "type": "java",
             "name": "Main",
             "request": "launch",
+            "mainClass": "BuilderDesign.Main",
+            "projectName": "SystemDesign_24706405"
+        },
+        {
+            "type": "java",
+            "name": "Main",
+            "request": "launch",
             "mainClass": "Cricbuzz.Main",
             "projectName": "SystemDesign_24706405"
         },

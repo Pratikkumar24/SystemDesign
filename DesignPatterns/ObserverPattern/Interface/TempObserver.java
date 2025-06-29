@@ -1,4 +1,4 @@
-package DesignPatterns.ObserverPattern.Interface;
+package ObserverPattern.Interface;
 
 public interface TempObserver {
     void updateTemp(int temp);

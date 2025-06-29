@@ -1,6 +1,7 @@
 {
     "java.project.sourcePaths": [
-        "DesginPatternQuestions/"
+        "DesginPatternQuestions",
+        "DesignPatterns"
     ],
     "java.debug.settings.onBuildFailureProceed": true
 }
