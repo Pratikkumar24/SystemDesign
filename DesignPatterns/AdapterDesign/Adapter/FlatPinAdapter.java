@@ -3,7 +3,7 @@ package AdapterDesign.Adapter;
 import AdapterDesign.FlatCharger.FlatChargePin;
 import AdapterDesign.RoundCharger.RoundChargePinImpl;
 
-public class FlatPinAdapter implements FlatChargePin{
+public class FlatPinAdapter implements FlatChargePin {
 
     RoundChargePinImpl chargePinImpl;
 
